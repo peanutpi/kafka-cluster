@@ -21,6 +21,7 @@ Created topic "test".
 $> bin/kafka-topics.sh --list --zookeeper localhost:2181
 test
 ```
+
 ## Produce test message 
  
 - verify by starting a producer & consumer that we are able to send & receive message using kafka cli
@@ -44,6 +45,4 @@ good morning
 docker-compose down
 ```
 
-> NOTE ::
->
-> After destroy all the existing messages will get lost.
+- all the data will be saved on mounted directory `kafkaData` & `zookeeperData` so in case you restart the whole data your previous data will be available even after restart or destroy.
