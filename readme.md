@@ -53,7 +53,7 @@ good morning
 ```
 
 
-## Destroy kafka single node setup
+## Destroy kafka multi node setup
 
 ```
 docker-compose down
